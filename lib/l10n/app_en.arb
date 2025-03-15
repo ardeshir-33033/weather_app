@@ -1,4 +1,5 @@
 {
   "city": "City",
-  "enterCity": "Please Enter Desired City:"
+  "enterCity": "Please Enter Desired City:",
+  "weatherApp": "Weather App"
 }

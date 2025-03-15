@@ -1,16 +1,34 @@
-# weather_app
 
-A new Flutter project.
+# WeatherApp Evaluation Test
 
-## Getting Started
+The challenge for WeatherApp in Flutter.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Practices and Code Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Clean Architecture
+- Bloc(Cubit)
+- Unit Tests
+- Integration Tests
+- [TDD](https://en.wikipedia.org/wiki/Test-driven_development)
+- [DDD](https://en.wikipedia.org/wiki/Domain-driven_design)
+- [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development): [Acceptance Test](https://en.wikipedia.org/wiki/Acceptance_testing) (In progress)
+- SOLID
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Running Tests
+
+To run project tests you can use the provided Shell files in the project.
+
+OR
+
+Integration test
+```bash
+  flutter test integration_test
+```
+Unit test
+```bash
+  flutter test
+```
+(cli sometimes does not work you can run from integration_test/app_test.dart)
+

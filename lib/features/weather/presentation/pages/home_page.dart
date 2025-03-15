@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:weather_app/core/utils/extensions.dart';
 import 'package:weather_app/features/weather/presentation/manager/weather_cubit.dart';
 import 'package:weather_app/locator.dart';
 
@@ -44,12 +45,13 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Weather App")),
+      appBar: AppBar(title: Text(tr(context).weatherApp)),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
             TextField(
+              key: Key("TextField"),
               controller: _cityController,
               decoration: InputDecoration(
                 hintText: "Enter city name",
@@ -77,6 +79,7 @@ class _HomePageState extends State<HomePage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
+                          key: Key("Got Weather"),
                           _cityController.text,
                           style: TextStyle(
                               fontSize: 24, fontWeight: FontWeight.bold),
